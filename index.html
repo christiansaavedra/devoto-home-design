@@ -16,8 +16,8 @@
       href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,600i&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./style/devoto-home-design.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/64682867ca.js"
       crossorigin="anonymous"
@@ -59,7 +59,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="titulo-hero">DEVOTO HOMEDESIGN</h1>
+              <h1 class="titulo-hero" data-aos="fade-in">
+                DEVOTO HOMEDESIGN
+              </h1>
             </div>
           </div>
         </div>
@@ -68,6 +70,11 @@
     <!--SECTION2-->
     <section id="section2">
       <div class="container">
+        <div class="row">
+          <h1 class="titulo-seccion">
+            EL PROYECTO
+          </h1>
+        </div>
         <div class="row">
           <div class="col-md-6 p-0">
             <h1 class="texto-cross-1">
@@ -83,18 +90,23 @@
           </div>
           <div class="col-md-6 p-0">
             <img
+              onclick="carousel(src, '../devoto-home-design/img/Renders/Vallejos-V17.jpg')"
               src="../devoto-home-design/img/Renders/living interiorv02.jpg"
+              ;
               alt=""
-              class="img-cross-1"
+              id="img-cross"
+              class="img-cross"
             />
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 p-0">
             <img
+              onclick="carousel(src, '../devoto-home-design/img/Renders/Pileta.jpg')"
               src="../devoto-home-design/img/Renders/balcon living - v05.jpg"
               alt=""
-              class="img-cross-2"
+              id="img-cross"
+              class="img-cross"
             />
           </div>
           <div class="col-md-6 p-0">
@@ -110,6 +122,7 @@
           </div>
         </div>
       </div>
+      <div class="zoom-bg" onclick="zoomClose()"></div>
     </section>
 
     <div class="parallax2">
@@ -162,9 +175,11 @@
           <div class="col-md-6 p-0">
             <div style="width:100%;height:325.75px;">
               <img
+                onclick="carousel(src, '../devoto-home-design/img/Renders/cocina v03.jpg')"
                 src="../devoto-home-design/img/Renders/Vallejos doble altura v03.jpg"
-                alt=""
-                class="img-s3-cross-1"
+                ;
+                class="img-s3-cross-1 img-cross"
+                id="img-cross"
               />
             </div>
           </div>
@@ -176,9 +191,10 @@
               class="img-s3-cross-2-container"
             >
               <img
-                src="../devoto-home-design/img/Renders/Cam Pileta v06 .jpg"
-                alt=""
-                class="img-s3-cross-2"
+                onclick="carousel(src, '../devoto-home-design/img/Renders/living interiorv02.jpg')"
+                src="../devoto-home-design/img/Renders/Pileta.jpg"
+                class="img-s3-cross-2 img-cross"
+                id="img-cross"
               />
             </div>
           </div>
@@ -213,9 +229,7 @@
       <section id="section3">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <h1 class="titulo-hero">ALGUNA PROMO? $$$</h1>
-            </div>
+            <div class="col-md-12"></div>
           </div>
         </div>
       </section>
@@ -224,13 +238,13 @@
     <section id="section4">
       <div class="container">
         <div class="row">
-          <h1 class="titulo">
+          <h1 class="titulo-seccion">
             AMENITIES
           </h1>
         </div>
         <div class="row">
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="fas fa-swimmer"></i>
               <h1 class="titulo-amenities">
                 Piscina
@@ -238,7 +252,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="fas fa-sun"></i>
               <h1 class="titulo-amenities">
                 Solarium
@@ -246,7 +260,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="fas fa-glass-cheers"></i>
               <h1 class="titulo-amenities">
                 SUM
@@ -254,7 +268,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="fas fa-hamburger"></i>
               <h1 class="titulo-amenities">
                 Deck con Parrilla
@@ -265,7 +279,7 @@
 
         <div class="row">
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="fas fa-car"></i>
               <h1 class="titulo-amenities">
                 Cochera
@@ -273,7 +287,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="fas fa-user-shield"></i>
               <h1 class="titulo-amenities">
                 Seguridad 24 hs.
@@ -281,7 +295,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="far fa-address-card"></i>
               <h1 class="titulo-amenities">
                 Llave magnética
@@ -289,12 +303,23 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities">
+            <div class="amenities" data-aos="flip-left">
               <i class="fas fa-trophy"></i>
               <h1 class="titulo-amenities">
                 Terminaciones Premium
               </h1>
             </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button
+              class="btn-square"
+              type="submit"
+              onclick="carousel(src, '../devoto-home-design/img/Renders/Vallejos-V17.jpg')"
+            >
+              Ver planos
+            </button>
           </div>
         </div>
       </div>
@@ -337,7 +362,7 @@
                 placeholder="Tu teléfono o celular"
               />
             </div>
-            <button type="submit">Enviar</button>
+            <button class="btn-square" type="submit">Enviar</button>
           </form>
         </div>
       </div>
@@ -358,5 +383,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/devoto-home-design/js/index.js"></script>
   </body>
 </html>
