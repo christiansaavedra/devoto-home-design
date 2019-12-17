@@ -2,6 +2,9 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body,
 html {
   background: rgb(247, 251, 255);
@@ -471,4 +474,30 @@ input {
   background-color: #717171;
 }
 
-/* Fading animation */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--third-color);
+  color: #f9f9f9;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: var(--card-shadow);
+  z-index: 100;
+}
+.float:hover {
+  opacity: 0.9;
+  color: #f9f9f9;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+.embed-responsive {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

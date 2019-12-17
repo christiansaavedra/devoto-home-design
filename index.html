@@ -37,11 +37,13 @@
       />
       <nav>
         <ul class="nav-links">
-          <li><a href="#">El proyecto</a></li>
+          <li><a href="#section2" id="anchor-proyecto">El proyecto</a></li>
           <li><a href="#">Sobre nosotros</a></li>
         </ul>
       </nav>
-      <a href="#"><button class="boton-nav">Contacto</button></a>
+      <a href="#section5" id="anchor-contacto"
+        ><button class="boton-nav">Contacto</button></a
+      >
       <!--    </div>
         </div>
       </div> -->
@@ -201,7 +203,53 @@
           <div class="col-md-6 p-0">
             <div class="s3-cross-box-2">
               <ul class="lista-cross">
-                <li><i class="fas fa-circle"></i>Smart film (opcional).</li>
+                <li
+                  type="text"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  <i class="fas fa-circle"></i
+                  ><span
+                    style="text-decoration-style: dotted !important; text-decoration-color: var(--second-color); text-decoration: underline;"
+                    >Smart film &nbsp;
+                  </span>
+                  (opcional)
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModalCenter"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <div
+                              class="embed-responsive embed-responsive-16by9"
+                            >
+                              <iframe
+                                class="embed-responsive-item"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/YLbAHmiLa7E"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li>
                   <i class="fas fa-circle"></i>Cocinas semi industriales
                   adaptadas con display y programación de cocción.
@@ -244,7 +292,7 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="200">
               <i class="fas fa-swimmer"></i>
               <h1 class="titulo-amenities">
                 Piscina
@@ -252,7 +300,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="350">
               <i class="fas fa-sun"></i>
               <h1 class="titulo-amenities">
                 Solarium
@@ -260,7 +308,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="500">
               <i class="fas fa-glass-cheers"></i>
               <h1 class="titulo-amenities">
                 SUM
@@ -268,7 +316,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="650">
               <i class="fas fa-hamburger"></i>
               <h1 class="titulo-amenities">
                 Deck con Parrilla
@@ -279,7 +327,7 @@
 
         <div class="row">
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="800">
               <i class="fas fa-car"></i>
               <h1 class="titulo-amenities">
                 Cochera
@@ -287,7 +335,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="950">
               <i class="fas fa-user-shield"></i>
               <h1 class="titulo-amenities">
                 Seguridad 24 hs.
@@ -295,7 +343,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="1100">
               <i class="far fa-address-card"></i>
               <h1 class="titulo-amenities">
                 Llave magnética
@@ -303,7 +351,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="amenities" data-aos="flip-left">
+            <div class="amenities" data-aos="zoom-in" data-aos-delay="1250">
               <i class="fas fa-trophy"></i>
               <h1 class="titulo-amenities">
                 Terminaciones Premium
@@ -316,7 +364,7 @@
             <button
               class="btn-square"
               type="submit"
-              onclick="carousel(src, '../devoto-home-design/img/Renders/Vallejos-V17.jpg')"
+              onclick="carouselPlanos('../devoto-home-design/img/Planos Demostrativos/1.jpg', '../devoto-home-design/img/Planos Demostrativos/2.jpg', '../devoto-home-design/img/Planos Demostrativos/3.jpg')"
             >
               Ver planos
             </button>
@@ -367,6 +415,17 @@
         </div>
       </div>
     </section>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=5491160338708&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20precios."
+      class="float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp my-float"></i>
+    </a>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
