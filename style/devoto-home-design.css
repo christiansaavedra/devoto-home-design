@@ -7,23 +7,7 @@ html {
 }
 body,
 html {
-  background: rgb(247, 251, 255);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(247, 251, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 44%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(247, 251, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 44%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(247, 251, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 44%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7fbff",endColorstr="#ffffff",GradientType=1);
+  background-color: #f9f9f9;
   height: 100%;
 }
 
@@ -31,6 +15,7 @@ html {
   --card-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
   --second-color: #24252a;
   --third-color: #cc9964;
+  --fourth-color: #212225;
 }
 
 .zoom-bg {
@@ -70,42 +55,31 @@ html {
   margin: 0 auto;
 }
 
-.close {
-  position: absolute;
+.zoom-bg-planos {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
   top: 0;
-  right: 2%;
-  font-size: 3.5rem;
-  cursor: pointer;
-  color: #24252a;
+  left: 0;
+  z-index: 50;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
-.close:hover {
-  color: black;
+
+.zoom-img-planos {
+  max-width: 2000px;
+  max-height: 680px;
+  /* object-fit: contain; */
+  display: block;
+  margin: 0 auto;
 }
-.previous {
-  position: absolute;
-  transition: 0.6s ease;
-  top: 40%;
-  left: 1%;
-  font-size: 4.5rem;
-  cursor: pointer;
-  color: #24252a;
-}
-.previous:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f9f9f9;
-}
-.next {
-  position: absolute;
-  transition: 0.6s ease;
-  top: 40%;
-  right: 1%;
-  font-size: 4.5rem;
-  cursor: pointer;
-  color: #24252a;
-}
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f9f9f9;
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #393939;
+  height: 2rem;
 }
 
 .img-cross {
@@ -306,7 +280,7 @@ li {
 /* S4 */
 
 #section4 {
-  padding: 3rem 0 3rem 0;
+  padding: 3rem 0 1.5rem 0;
   background-color: #f9f9f9;
 }
 #section4 .row:nth-child(2) {
@@ -396,84 +370,28 @@ input {
 .btn-square:hover {
   color: rgba(240, 230, 140, 0.7);
 }
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+#nosotros {
+  margin: 3rem 0 3rem 0;
 }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+#nosotros h1 {
   text-align: center;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+#footer {
+  background-color: var(--fourth-color);
+  padding: 3rem 0 3rem 0;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#footer .col-12 {
+  text-align: center;
 }
-
-.active,
-.dot:hover {
-  background-color: #717171;
+#footer img {
+  width: 10%;
+  margin: 1rem 0 0 0;
 }
-
+#footer h1 {
+  color: var(--third-color);
+  font-size: 1rem;
+  margin: 1rem;
+}
 .float {
   position: fixed;
   width: 60px;

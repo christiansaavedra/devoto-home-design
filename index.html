@@ -38,7 +38,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#section2" id="anchor-proyecto">El proyecto</a></li>
-          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#nosotros" id="anchor-nosotros">Sobre nosotros</a></li>
         </ul>
       </nav>
       <a href="#section5" id="anchor-contacto"
@@ -113,10 +113,10 @@
           </div>
           <div class="col-md-6 p-0">
             <h1 class="texto-cross-2">
-              Estará ubicado en la dirección Andrés Vallejos en el barrio de
-              Villa Devoto, C.A.B.A. Este contará con 12 amplios departamentos
-              de categoría en 6 pisos, incluyendo 6 unidades de 4 ambientes al
-              contrafrente, 2 unidades de 3 ambientes al frente y 4
+              Estará ubicado en la dirección Andrés Vallejos 3335 en el barrio
+              de Villa Devoto, C.A.B.A. Este contará con 12 amplios
+              departamentos de categoría en 6 pisos, incluyendo 6 unidades de 4
+              ambientes al contrafrente, 2 unidades de 3 ambientes al frente y 4
               Sempisos/duplex de 2 y 3 ambientes al frente. Contará con 12
               Cocheras (incluyendo una doble) cubiertas y descubiertas en planta
               baja (opcionales y exclusivas para dueños).
@@ -210,10 +210,10 @@
                 >
                   <i class="fas fa-circle"></i
                   ><span
-                    style="text-decoration-style: dotted !important; text-decoration-color: var(--second-color); text-decoration: underline;"
-                    >Smart film &nbsp;
+                    style="text-decoration-style: dotted !important; text-decoration-color: var(--second-color); text-decoration: underline; cursor: pointer"
+                    >Smart film
                   </span>
-                  (opcional)
+                  &nbsp;(opcional)
 
                   <!-- Modal -->
                   <div
@@ -270,7 +270,19 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-12 py-3">
+            <button
+              class="btn-square"
+              type="submit"
+              onclick="carouselPlanos('../devoto-home-design/img/Planos Demostrativos/1.jpg', '../devoto-home-design/img/Planos Demostrativos/2.jpg', '../devoto-home-design/img/Planos Demostrativos/3.jpg')"
+            >
+              Ver planos
+            </button>
+          </div>
+        </div>
       </div>
+      <div class="zoom-bg-planos" onclick="zoomClose()"></div>
     </section>
 
     <div class="parallax3">
@@ -359,15 +371,31 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <div class="container">
         <div class="row">
-          <div class="col-12">
-            <button
-              class="btn-square"
-              type="submit"
-              onclick="carouselPlanos('../devoto-home-design/img/Planos Demostrativos/1.jpg', '../devoto-home-design/img/Planos Demostrativos/2.jpg', '../devoto-home-design/img/Planos Demostrativos/3.jpg')"
-            >
-              Ver planos
-            </button>
+          <h1 class="titulo-seccion">
+            NOSOTROS
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col-12 p-0">
+            <h1 class="texto-cross-1">
+              <span style="color:var(--third-color); font-weight:600"
+                >LULICO S.A.</span
+              >
+              es una firma creada y dedicada al desarrollo de un proyecto
+              rentable y con propósito. Apuntando alto, buscamos construir
+              amplias unidades modernas que destaquen en su calidad y detalle
+              manteniéndose al mismo tiempo accesibles al público.<br />
+              Contamos con un equipo de trabajo con más de 20 años de
+              experiencia, y un vasto historial de proyectos exitosos,
+              especializados en transformar un terreno en nuevos espacios de
+              gran categoría y comodidad.
+            </h1>
           </div>
         </div>
       </div>
@@ -412,6 +440,20 @@
             </div>
             <button class="btn-square" type="submit">Enviar</button>
           </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Teléfonos: 11 5513 8802 / 11 6033 8708 / (011) 45748261</h1>
+            <h1>dvthdesign@outlook.com</h1>
+            <h1>Av. San Martín 6683 - C.A.B.A.</h1>
+          </div>
+          <div class="col-12">
+            <img src="../devoto-home-design/img/Logos/lulico.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
