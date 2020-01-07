@@ -85,9 +85,11 @@ html {
 .img-cross {
   border-radius: 5px;
   cursor: zoom-in;
+  transition: 0.3s ease-in-out;
 }
 .img-cross:hover {
-  transform: scale(1.01);
+  transform: scale(1.025);
+  transition: 0.3s ease-in-out;
 }
 
 /* NAVBAR */
@@ -155,7 +157,7 @@ header {
 }
 
 .parallax2 {
-  height: 90%;
+  height: 80%;
   background-image: url("../img/Renders/Vallejos-V17.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -165,9 +167,10 @@ header {
   align-items: center;
   justify-content: center;
   box-shadow: var(--card-shadow);
+  position: relative;
 }
 .parallax3 {
-  height: 90%;
+  height: 100%;
   background-image: url("../img/Renders/Vallejos-V17.jpg");
   background-attachment: fixed;
   background-position: bottom;
@@ -178,6 +181,48 @@ header {
   justify-content: center;
   box-shadow: var(--card-shadow);
 }
+
+.parallax3 i {
+  font-weight: 800;
+  color: var(--third-color);
+  font-size: 0.5rem;
+  margin: 1.1rem 0.5rem 0 0;
+}
+
+.parallax3 ul {
+  padding: 0;
+}
+
+.parallax3 li {
+  font-size: 1rem;
+  line-height: 2.2rem;
+  padding: 0rem;
+  margin: 0;
+  text-align: justify;
+}
+.parallax3 .titulo-cross {
+  text-align: center;
+}
+
+.semipisos .card {
+  height: 100%;
+}
+.semipisos .card-body {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tres-amb .col-md-4 {
+  display: block;
+  margin: 0 auto;
+}
+.tres-amb ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .titulo-hero {
   position: relative;
   z-index: 2;
@@ -418,4 +463,40 @@ input {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+  .titulo-hero {
+    font-size: 1rem;
+  }
+  .titulo-seccion {
+    padding: 1rem 0 1rem 0;
+  }
+  #section5 .titulo {
+    font-size: 1rem;
+  }
+  nav ul,
+  #anchor-contacto {
+    display: none;
+  }
+  .logo-nav {
+    max-width: 100%;
+  }
+  .parallax {
+    height: 90%;
+  }
+  .titulo-seccion {
+    padding: 1.2rem 5.2rem 1.2rem 5.2rem;
+    margin: 0rem auto 1rem auto;
+    font-size: 1.3rem;
+  }
+  .texto-cross-1,
+  .texto-cross-2 {
+    line-height: 2rem;
+    padding: 1.5rem;
+  }
+  .img-cross:hover {
+    transform: none;
+    transition: none;
+  }
 }
