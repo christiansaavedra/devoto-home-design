@@ -1,11 +1,11 @@
 let zoomBg = document.querySelector(".zoom-bg");
 let zoomBgPlanos = document.querySelector(".zoom-bg-planos");
 
-window.addEventListener("resize", function() {
-  if (window.innerWidth > 568) {
-    function carousel(a, b, c) {
-      zoomBg.style.display = "flex";
-      zoomBg.innerHTML = `
+var jmediaquery = window.matchMedia("(min-width: 769px)");
+if (jmediaquery.matches) {
+  function carousel(a, b, c) {
+    zoomBg.style.display = "flex";
+    zoomBg.innerHTML = `
   <div class="zoom-content">
   <div id="carouselExampleControls" class="carousel" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
@@ -36,8 +36,8 @@ window.addEventListener("resize", function() {
   </a>
 </div>
 </div> `;
-    }
-    /* 
+  }
+  /* 
 function carouselPlanos(a, b, c) {
   zoomBgPlanos.style.display = "flex";
   zoomBgPlanos.innerHTML = `
@@ -65,16 +65,16 @@ function carouselPlanos(a, b, c) {
 </div> `;
 } */
 
-    function zoomClose() {
-      if (event.target !== event.currentTarget) {
-        return;
-      } else {
-        zoomBg.style.display = "none";
-        zoomBgPlanos.style.display = "none";
-      }
+  function zoomClose() {
+    if (event.target !== event.currentTarget) {
+      return;
+    } else {
+      zoomBg.style.display = "none";
+      zoomBgPlanos.style.display = "none";
     }
   }
-});
+}
+
 $(document).ready(function() {
   $("anchor-proyecto").on("click", function(event) {
     if (this.hash !== "") {
