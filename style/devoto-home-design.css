@@ -18,7 +18,7 @@ html {
   --fourth-color: #212225;
 }
 .mobile-in {
-  display: none;
+  display: none !important;
 }
 .zoom-bg {
   width: 100%;
@@ -184,25 +184,29 @@ header {
   box-shadow: var(--card-shadow);
 }
 
-.parallax3 i {
+.parallax3 i,
+.parallax3-mobile i {
   font-weight: 800;
   color: var(--third-color);
   font-size: 0.5rem;
   margin: 1.1rem 0.5rem 0 0;
 }
 
-.parallax3 ul {
+.parallax3 ul,
+.parallax3-mobile ul {
   padding: 0;
 }
 
-.parallax3 li {
+.parallax3 li,
+.parallax3-mobile li {
   font-size: 1rem;
   line-height: 2.2rem;
   padding: 0rem;
   margin: 0;
   text-align: justify;
 }
-.parallax3 .titulo-cross {
+.parallax3 .titulo-cross,
+.parallax3-mobile .titulo-cross {
   text-align: center;
 }
 
@@ -246,24 +250,21 @@ header {
   font-size: 1.1rem;
   font-weight: 400;
 }
-.texto-cross-1 {
-  font-size: 1rem;
-  line-height: 2.2rem;
-  padding: 1.4rem;
-  text-align: justify;
-  margin: 0;
-}
-.img-cross {
-  width: 100%;
-  padding: 0;
-}
-
+.texto-cross-1,
 .texto-cross-2 {
   font-size: 1rem;
   line-height: 2.2rem;
   padding: 1.4rem;
-  margin: 0;
   text-align: justify;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-cross {
+  width: 100%;
+  padding: 0;
 }
 
 /* S3 */
@@ -280,22 +281,6 @@ header {
   height: 100%;
   object-fit: cover;
 }
-
-/* .img-s3-cross-2-container:after {
-  content: "\A";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-}
-.img-s3-cross-2-container:hover:after {
-  opacity: 1;
-} */
 .titulo-cross {
   margin: 1.1rem 0 0.5rem 0;
   color: var(--third-color);
@@ -350,6 +335,7 @@ li {
   color: var(--second-color);
   font-size: 3rem;
   font-weight: 600;
+  text-align: center;
 }
 .amenities {
   display: flex;
@@ -365,6 +351,11 @@ li {
 #section4 i {
   font-size: 3.6rem;
   color: var(--third-color);
+}
+.lulico {
+  text-align: justify;
+  margin: 0;
+  display: block;
 }
 
 /* S5 */
@@ -471,7 +462,7 @@ input {
 
 @media only screen and (max-width: 767px) {
   .mobile-in {
-    display: block;
+    display: block !important;
   }
   .mobile-out {
     display: none;
@@ -480,9 +471,8 @@ input {
     display: none;
   }
   .parallax3-mobile {
-    height: 100%;
     display: block;
-    box-shadow: var(--card-shadow);
+    box-shadow: none;
   }
 
   #section2 {
@@ -494,6 +484,7 @@ input {
   #section3 .row:nth-child(1) .col-md-6:nth-child(2) {
     padding: 0.6rem 0 0.5rem 0;
   }
+
   #section4 {
     padding: 0rem 0 0rem 0;
   }
@@ -506,6 +497,10 @@ input {
     margin: 1.5rem 0 1.5rem 0;
     text-align: center;
   }
+  .semipisos .col-md-4 {
+    margin: 1rem 0;
+  }
+
   form {
     width: 80%;
   }
@@ -525,9 +520,6 @@ input {
   .titulo-hero {
     font-size: 1rem;
   }
-  .titulo-seccion {
-    padding: 1rem 0 1rem 0;
-  }
   #section5 .titulo {
     font-size: 1rem;
   }
@@ -542,10 +534,18 @@ input {
     height: 90%;
   }
   .titulo-seccion {
-    padding: 1.2rem 5.2rem 1.2rem 5.2rem;
-    margin: 0rem auto 1rem auto;
-    font-size: 1.3rem;
+    padding: 1.3rem;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1.35rem;
+    text-align: center;
   }
+  #section5 .titulo-seccion {
+    width: 80% !important;
+  }
+
   .texto-cross-1,
   .texto-cross-2 {
     line-height: 2rem;

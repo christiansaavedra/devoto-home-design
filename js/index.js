@@ -75,6 +75,14 @@ function carouselPlanos(a, b, c) {
   }
 }
 
+var jmediaquery2 = window.matchMedia("(max-width: 767px)");
+if (jmediaquery2.matches) {
+  var element = document.getElementById("parallax");
+  element.classList.remove("parallax3");
+  element.classList.add("parallax3-mobile");
+  console.log(123);
+}
+
 $(document).ready(function() {
   $("anchor-proyecto").on("click", function(event) {
     if (this.hash !== "") {
