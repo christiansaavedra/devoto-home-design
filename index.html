@@ -18,10 +18,18 @@
     />
     <link rel="stylesheet" href="./style/devoto-home-design.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
     <script
       src="https://kit.fontawesome.com/64682867ca.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_518j8OqptXnSxPkyISng1");
+   })();
+</script>
+
   </head>
 
   <body> 
@@ -518,7 +526,7 @@
           <h1 class="titulo-seccion">CONTACTANOS</h1>
         </div>
         <div class="row">
-          <form>
+          <form action="../devoto-home-design/js/api.js" id="formulario">
             <div class="form-group">
               <input
                 type="text"
@@ -527,6 +535,7 @@
                 aria-describedby="emailHelp"
                 required
                 placeholder="Tu nombre"
+                name="user_name"
               />
             </div>
             <div class="form-group">
@@ -537,6 +546,7 @@
                 aria-describedby="emailHelp"
                 required
                 placeholder="Tu correo electrónico"
+                name="user_email"
               />
             </div>
             <div class="form-group">
@@ -547,9 +557,10 @@
                 aria-describedby="emailHelp"
                 required
                 placeholder="Tu teléfono o celular"
+                name="user_phone"
               />
             </div>
-            <button class="btn-square" type="submit">Enviar</button>
+            <button class="btn-square" type="submit" value="Send">Enviar</button>
           </form>
         </div>
       </div>
@@ -600,5 +611,7 @@
       AOS.init();
     </script>
     <script src="/devoto-home-design/js/index.js"></script>
+    <script src="/devoto-home-design/js/api.js"></script>
+   
   </body>
 </html>
