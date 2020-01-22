@@ -24,10 +24,25 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
 <script type="text/javascript">
    (function(){
       emailjs.init("user_518j8OqptXnSxPkyISng1");
    })();
+</script>
+ <script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate the contact number value
+          
+          emailjs.sendForm('sendgrid', 'template_GJ4TREJa', this);
+      });
+  }
 </script>
 
   </head>
@@ -526,7 +541,7 @@
           <h1 class="titulo-seccion">CONTACTANOS</h1>
         </div>
         <div class="row">
-          <form action="../devoto-home-design/js/api.js" id="formulario">
+          <form id="contact-form" method="post">
             <div class="form-group">
               <input
                 type="text"
@@ -611,7 +626,7 @@
       AOS.init();
     </script>
     <script src="/devoto-home-design/js/index.js"></script>
-    <script src="/devoto-home-design/js/api.js"></script>
+    
    
   </body>
 </html>

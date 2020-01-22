@@ -309,6 +309,7 @@ li {
 #section3 .row:nth-child(1) .col-md-6:nth-child(2) {
   padding: 0;
 }
+
 /* S4 */
 
 #section4 {
@@ -485,6 +486,9 @@ input {
 
   #section4 {
     padding: 0rem 0 0rem 0;
+  }
+  #section4 .titulo-seccion {
+    margin-top: 2rem;
   }
   #section4 .row:nth-child(2),
   #section4 .row:nth-child(3) {
