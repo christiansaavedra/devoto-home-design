@@ -560,4 +560,7 @@ input {
   .planos-mobile img {
     width: 10%;
   }
+  #footer img {
+    width: 25%;
+  }
 }
