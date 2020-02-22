@@ -1,53 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Devoto Home Design</title>
-    <!--BOOTSTRAP , FONT, CSS-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Devoto Home Design</title>
 
-    <link rel="stylesheet" href="./css/devoto-home-design.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-    href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,600i&display=swap"
-    rel="stylesheet"
-  />
-   
+<!--BOOTSTRAP , FONT, CSS-->
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="./css/devoto-home-design.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link
+href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,600i&display=swap"
+rel="stylesheet"
+/>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-
-<!--     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-    <script
-    src="https://kit.fontawesome.com/64682867ca.js"
-    crossorigin="anonymous"
-  ></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_518j8OqptXnSxPkyISng1");
-   })();
-</script>
- <script type="text/javascript">
-  window.onload = function() {
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          // generate the contact number value
-          
-          emailjs.sendForm('sendgrid', 'template_GJ4TREJa', this);
-      });
-  }
-</script>
-
-  </head>
+</head>
 
   <body> 
     <header>     
@@ -602,26 +575,52 @@
     </a>
     
     <script src="js/index.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
       AOS.init();
     </script>
+
+  <script
+  src="https://kit.fontawesome.com/64682867ca.js"
+  crossorigin="anonymous" defer></script>
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script> 
+
+   <script type="text/javascript">
+   (function(){
+   emailjs.init("user_518j8OqptXnSxPkyISng1");
+   })();
+   </script>
+   <script type="text/javascript">
+   window.onload = function() {
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
+   event.preventDefault();
+   // generate the contact number value
    
+   emailjs.sendForm('sendgrid', 'template_GJ4TREJa', this);
+   });
+   }
+   </script>
     
    
   </body>
