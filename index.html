@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Devoto Home Design</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Devoto Home Design</title>
 
-<!--BOOTSTRAP , FONT, CSS-->
-<link
-rel="stylesheet"
-href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-crossorigin="anonymous"
-/>
-<link rel="stylesheet" href="./css/devoto-home-design.css" />
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link
-href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,600i&display=swap"
-rel="stylesheet"
-/>
+    <!--BOOTSTRAP , FONT, CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/devoto-home-design.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,600,600i&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"
+    />
+  </head>
 
-  <body> 
-    <header>     
+  <body>
+    <header>
       <img
         src="img/Logos/dvthm logo blanco.png"
         alt="Devoto Home Design Proyecto Inmobiliario"
@@ -38,9 +42,6 @@ rel="stylesheet"
       <a href="#section5" id="anchor-contacto"
         ><button class="boton-nav">Contacto</button></a
       >
-          </div>
-        </div>
-      </div> 
     </header>
     <section id="section0">
       <div class="container">
@@ -117,12 +118,12 @@ rel="stylesheet"
             </h1>
           </div>
           <div class="col-12 p-0 mobile-in">
-            <img            
-            src="img/Renders/balcon living - v05.jpg"
-            alt=""
-            id="img-cross"
-            class="img-cross"
-          />
+            <img
+              src="img/Renders/balcon living - v05.jpg"
+              alt=""
+              id="img-cross"
+              class="img-cross"
+            />
           </div>
         </div>
       </div>
@@ -268,7 +269,7 @@ rel="stylesheet"
               style="width:100%;height:325.75px;"
               class="img-s3-cross-2-container"
             >
-              <img                
+              <img
                 src="img/Renders/Pileta.jpg"
                 class="img-s3-cross-2 img-cross"
                 id="img-cross"
@@ -281,33 +282,31 @@ rel="stylesheet"
             <button
               class="btn-square"
               type="submit"
-              
               onclick="carousel('img/Planos/1.jpg', '/devoto-home-design/img/Planos/2.jpg', '/devoto-home-design/img/Planos/3.jpg')"
             >
               Ver planos
             </button>
           </div>
         </div>
-          <div class="row mobile-in planos-mobile">
-            <div class="col-12">
-            <img src="img/Planos/1.jpg" alt="">             
+        <div class="row mobile-in planos-mobile">
+          <div class="col-12">
+            <img src="img/Planos/1.jpg" alt="" />
           </div>
           <div class="col-12">
-            <img src="/devoto-home-design/img/Planos/2.jpg" alt=""></div>
-          <div class="col-12"><img src="/devoto-home-design/img/Planos/3.jpg" alt=""></div>
+            <img src="/devoto-home-design/img/Planos/2.jpg" alt="" />
+          </div>
+
+          <div class="col-12">
+            <img src="/devoto-home-design/img/Planos/3.jpg" alt="" />
+          </div>
         </div>
-        
-     
       </div>
-      
     </section>
     <div class="container-fluid">
-   <div class="row">
-     
-    <h1 class="titulo-seccion mobile-in">UNIDADES & MEDIDAS</h1>
-   </div>
-    <div class="parallax3" id="parallax">
-      
+      <div class="row">
+        <h1 class="titulo-seccion mobile-in">UNIDADES & MEDIDAS</h1>
+      </div>
+      <div class="parallax3" id="parallax">
         <div class="row semipisos">
           <div class="col-md-4" data-aos="fade-down" data-aos-duration="1500">
             <div class="card shadow">
@@ -455,7 +454,7 @@ rel="stylesheet"
               </h1>
             </div>
           </div>
-    
+
           <div class="col-md-4 col-6">
             <div class="amenities" data-aos="zoom-in" data-aos-delay="1100">
               <i class="far fa-address-card"></i>
@@ -543,7 +542,9 @@ rel="stylesheet"
                 name="user_phone"
               />
             </div>
-            <button class="btn-square" type="submit" value="Send">Enviar</button>
+            <button class="btn-square" type="submit" value="Send">
+              Enviar
+            </button>
           </form>
         </div>
       </div>
@@ -573,8 +574,8 @@ rel="stylesheet"
     >
       <i class="fab fa-whatsapp my-float"></i>
     </a>
-    
-    <script src="js/index.js"></script>
+
+    <script src="js/index.js" async></script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -600,28 +601,56 @@ rel="stylesheet"
       AOS.init();
     </script>
 
-  <script
-  src="https://kit.fontawesome.com/64682867ca.js"
-  crossorigin="anonymous" defer></script>
+    <script
+      src="https://kit.fontawesome.com/64682867ca.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script> 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+    ></script>
 
-   <script type="text/javascript">
-   (function(){
-   emailjs.init("user_518j8OqptXnSxPkyISng1");
-   })();
-   </script>
-   <script type="text/javascript">
-   window.onload = function() {
-   document.getElementById('contact-form').addEventListener('submit', function(event) {
-   event.preventDefault();
-   // generate the contact number value
-   
-   emailjs.sendForm('sendgrid', 'template_GJ4TREJa', this);
-   });
-   }
-   </script>
-    
-   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_518j8OqptXnSxPkyISng1");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function(event) {
+            event.preventDefault();
+            // generate the contact number value
+
+            emailjs.sendForm("sendgrid", "template_GJ4TREJa", this).then(
+              function(response) {
+                Swal.fire(
+                  "¡Gracias!",
+                  "Pronto estaremos contactandonos con Usted.",
+                  "success"
+                );
+              },
+              function(error) {
+                Swal.fire({
+                  icon: "error",
+                  title: "Hubo un error...",
+                  text:
+                    "No se ha procesado con éxito el formulario de contacto.",
+                  footer:
+                    '<a href="https://api.whatsapp.com/send?phone=5491160338708&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20precios." target="_blank">'
+                });
+              }
+            );
+          });
+      };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill" defer></script>
   </body>
 </html>

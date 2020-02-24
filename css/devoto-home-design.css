@@ -383,10 +383,10 @@ input {
   color: white;
 }
 .form-control {
-  background: var(--second-color);
+  background-color: var(--second-color) !important;
   border: none;
   border-radius: 0px;
-  border-bottom: 1px solid var(--third-color);
+  border-bottom: 1px solid var(--third-color) !important;
   padding: 2rem 0 2rem 0;
 }
 .form-control:focus {
@@ -395,6 +395,7 @@ input {
   box-shadow: none;
   background: var(--second-color);
 }
+
 .btn-square {
   display: block;
   margin: 0 auto;
