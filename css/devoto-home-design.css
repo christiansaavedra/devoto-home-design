@@ -33,6 +33,7 @@ html {
   align-items: center;
 }
 .zoom-content {
+  min-width: 50%;
   background-color: #f9f9f9;
   padding: 1rem;
   -webkit-animation-name: zoom;
@@ -58,12 +59,17 @@ html {
 }
 
 .zoom-bg-planos {
-  width: 100%;
+  width: 70%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
-  left: 0;
+  left: 15%;
+  z-index: 50;
+  display: none;
+
+  position: fixed;
+
   z-index: 50;
   display: none;
   justify-content: center;
@@ -292,7 +298,8 @@ header {
   padding: 0;
 }
 .s3-cross-box,
-.s3-cross-box-2 {
+.s3-cross-box-2,
+.s3-cross-box-3 {
   padding: 0 0 0 1rem;
 }
 .s3-cross-box-2 {
@@ -315,6 +322,13 @@ li {
 }
 #section3 .row:nth-child(1) .col-md-6:nth-child(2) {
   padding: 0;
+}
+
+.cerrarPlanos {
+  height: 4000px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 
 /* S4 */
@@ -467,6 +481,13 @@ input {
   display: flex;
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+  .zoom-bg-planos .zoom-img {
+    max-width: 290px !important;
+    max-height: 560px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .mobile-in {
     display: block !important;
@@ -495,6 +516,32 @@ input {
   #section3 .row:nth-child(1) .col-md-6:nth-child(2) {
     padding: 0.6rem 0 0.5rem 0;
   }
+  .zoom-bg-planos {
+    width: 80%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 50%);
+  }
+  .zoom-bg-planos .zoom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zoom-bg-planos .zoom-img {
+    /* object-fit: contain; */
+    display: block;
+    margin: 0 auto;
+  }
+  .cerrarPlanos {
+    height: 8000px;
+    top: 70%;
+  }
+  .lista-cross li {
+    margin-bottom: 1rem;
+  }
 
   #section4 {
     padding: 0rem 0 0rem 0;
@@ -522,12 +569,12 @@ input {
     font-size: 0.85rem;
   }
 
-  .planos-mobile .col-12 img {
-    width: 100%;
+  .s3-cross-box,
+  .s3-cross-box-2,
+  .s3-cross-box-3 {
+    padding: 1.8rem 1.5rem;
   }
-  .s3-cross-box-2 {
-    padding: 1.8rem 0 1.5rem 1.2rem;
-  }
+
   #section2 .container .row:nth-child(3) .col-md-6:nth-child(1) {
     display: none;
   }
@@ -569,9 +616,7 @@ input {
     transform: none;
     transition: none;
   }
-  .planos-mobile img {
-    width: 10%;
-  }
+
   #footer img {
     width: 25%;
   }

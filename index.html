@@ -157,12 +157,15 @@
           <div class="s3-cross-box-2">
             <ul class="lista-cross">
               <li type="text" data-toggle="modal" data-target="#exampleModalCenter">
-                <i class="fas fa-circle"></i><span
-                  style="text-decoration-style: dotted !important; text-decoration-color: var(--second-color); text-decoration: underline; cursor: pointer">Smart
-                  film
-                </span>
-                &nbsp;(opcional) - &nbsp;<p class="ver-mas"> Ver más</p>
-
+                <i class="fas fa-circle"></i>
+                <div>
+                  <span
+                    style="text-decoration-style: dotted !important; text-decoration-color: var(--second-color); text-decoration: underline; cursor: pointer"
+                    class="ver-mas">Sistema de Smart
+                    film Glass
+                  </span>
+                  <span>en ventanales en 4 Ambientes y opcionales para el resto.</span>
+                </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -207,28 +210,83 @@
           </div>
         </div>
       </div>
-      <div class="row mobile-out">
+      <div class="row">
+        <div class="col-md-6 p-0">
+          <div class="s3-cross-box-3">
+
+            <ul class="lista-cross">
+              <li type="text" data-toggle="modal" data-target="#ariston">
+                <i class="fas fa-circle"></i>
+                <div>
+                  <span>Calderas de condensación ARISTON con conectividad Wi-Fi y sistema de
+                    monitoreo y regulación de temperatura vía</span> <span
+                    style="text-decoration-style: dotted !important; text-decoration-color: var(--second-color); text-decoration: underline; cursor: pointer"
+                    class="ver-mas">App Ariston Net
+                  </span>
+                  <span>para Android/iOS.</span>
+                </div>
+
+                <!-- Modal app ariston-->
+                <div class="modal fade" id="ariston" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="560" height="315"
+                              src="https://www.youtube.com/embed/Wo4KsZjZ-Cs" frameborder="0"
+                              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-circle"></i>Hidromasajes con doble circulación de agua y aire en baños principales )
+              </li>
+              <li>
+                <i class="fas fa-circle"></i>Descargas de inodoro a válvula con doble función. (Descarga de 3 y 6 litros
+                )
+              </li>
+              <li>
+                <i class="fas fa-circle"></i>Aires acondicionados split en todos los ambientes.
+              </li>
+              <li>
+                <i class="fas fa-circle"></i>Luces LED de emergencia en todos los ambientes.
+              </li>
+              <li>
+                <i class="fas fa-circle"></i>Portero visor color HD con conectividad Wi-Fi para uso a través de la App
+                para Android/iOS de FERMAX
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div style="width:100%;height:325.75px;">
+            <img onclick="carousel(src, 'img/Renders/balcon living - v05.jpg')" src="img/Renders/cocina v03.jpg" ;
+              class="img-s3-cross-1 img-cross" id="img-cross" />
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
         <div class="col-12 py-3">
-          <button class="btn-square" type="submit"
-            onclick="carousel('img/Planos/1.jpg', 'img/Planos/2.jpg', 'img/Planos/3.jpg')">
+          <button class="btn-square" type="submit" onclick="carouselPlanos()">
             Ver planos
           </button>
         </div>
-      </div>
-      <div class="row mobile-in planos-mobile">
-        <div class="col-12">
-          <img src="img/Planos/1.jpg" alt="" />
-        </div>
-        <div class="col-12">
-          <img src="img/Planos/2.jpg" alt="" />
-        </div>
 
-        <div class="col-12">
-          <img src="img/Planos/3.jpg" alt="" />
-        </div>
       </div>
+
     </div>
+    <div class="cerrarPlanos" onclick="zoomClosePlanos()" style="display: none"></div>
+    <div class="zoom-bg-planos"> </div>
   </section>
+
   <div class="container-fluid">
     <div class="row">
       <h1 class="titulo-seccion mobile-in">UNIDADES & MEDIDAS</h1>
