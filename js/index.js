@@ -105,11 +105,11 @@ let planos = [
   },
 ];
 
-function carouselPlanos() {
+const carouselPlanos = async () => {
   cerrarPlanos.style.display = "flex";
   zoomBgPlanos.style.display = "flex";
   zoomBgPlanos.innerHTML = `
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselPlanos" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="img/Planos/1.jpg" alt="First slide">
@@ -122,11 +122,11 @@ function carouselPlanos() {
     
     
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselPlanos" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselPlanos" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -134,7 +134,7 @@ function carouselPlanos() {
    
     
 `;
-}
+};
 
 function zoomClosePlanos() {
   zoomBgPlanos.style.display = "none";
@@ -146,7 +146,6 @@ if (jmediaquery2.matches) {
   var element = document.getElementById("parallax");
   element.classList.remove("parallax3");
   element.classList.add("parallax3-mobile");
-  console.log(123);
 }
 
 $(document).ready(function () {
