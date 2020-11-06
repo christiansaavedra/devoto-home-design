@@ -495,7 +495,7 @@ input {
   .mobile-out {
     display: none;
   }
-  .parallax1 {
+  .parallax {
     background-size: cover;
     -webkit-background-size: contain;
   }
