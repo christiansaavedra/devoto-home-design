@@ -497,6 +497,8 @@ input {
   }
   .parallax {
     background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
     -webkit-background-size: contain;
   }
   .parallax2 {
